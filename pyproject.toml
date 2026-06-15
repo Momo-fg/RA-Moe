@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ramoe"
+version = "0.1.0"
+description = "RA-MoE: Region-Aware Mixture-of-Experts for AU-Guided Micro-expression Recognition"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+  {name = "Mingru Huang"}
+]
+dependencies = [
+  "torch",
+  "torchvision",
+  "numpy",
+  "opencv-contrib-python",
+  "pandas",
+  "pillow",
+  "scikit-learn",
+  "tqdm",
+  "tensorboard",
+  "dlib",
+  "openpyxl",
+  "PyYAML",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

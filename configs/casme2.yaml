@@ -1,0 +1,30 @@
+dataset:
+  name: casme2
+  num_classes: 5
+  raw_root: data/casme2/CASME2_RAW_selected
+  annotation_file: data/casme2/CASME2-coding-20140508.xlsx
+  cropped_root: data/casme2/CASME2_Cropped128
+  keyframe_root: data/casme2/CASME2_onset_apex_offset
+  optical_flow_root: data/casme2/CASME2_optflow_retinaface
+  region_label_root: data/casme2/CASME2_region_gt
+  region_mask_root: data/casme2/CASME2_masks_5area
+  merged_root: data/casme2/casme2_retinaface_5region
+  loso_root: data/casme2/CASME2_LOSO_with_5channel_region
+
+assets:
+  skd_tstsan: pretrained/SKD-TSTSAN.pth
+  retinaface: pretrained/Resnet50_Final.pth
+  magnet: pretrained/magnet.pth
+  dlib_landmark: pretrained/shape_predictor_68_face_landmarks.dat
+
+train:
+  learning_rate: 0.001
+  batch_size: 16
+  seed: 1337
+  max_iter: 20000
+
+output:
+  experiment_name: casme2_ramoe
+  output_dir: outputs/casme2_ramoe
+  regionnet_dir: checkpoints/regionnet
+

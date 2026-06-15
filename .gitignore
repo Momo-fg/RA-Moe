@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local environments
+.venv/
+venv/
+env/
+anaconda/
+
+# Data and generated artifacts
+/data/
+outputs/
+runs/
+Experiment_for_recognize/
+*.npy
+*.npz
+*.log
+*.docx
+
+# Model weights. Keep README/.gitkeep placeholders.
+*.pt
+*.pth
+!checkpoints/**/README.md
+!checkpoints/**/.gitkeep
+!pretrained/**/README.md
+!pretrained/**/.gitkeep
