@@ -1,10 +1,1 @@
-cff-version: 1.2.0
-message: "If you use this code, please cite the RA-MoE paper."
-title: "RA-MoE: Region-Aware Mixture-of-Experts for AU-Guided Micro-expression Recognition"
-authors:
-  - family-names: Huang
-    given-names: Mingru
-conference:
-  name: "ECML PKDD 2026"
-repository-code: "https://github.com/Huangmr0719/RA-MoE"
-license: "MIT"
+
