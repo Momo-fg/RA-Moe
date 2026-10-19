@@ -8,5 +8,4 @@ RA-MoE uses three effective branches:
 
 - `S`: global static appearance.
 - `T`: optical-flow temporal motion.
-- `AU`: RegionNet-guided regional cues.
-
+- `AU`: RegionNet-guided regional cues
